@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +10,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
@@ -24,12 +23,12 @@ padding:20px;
 }
 
 .container{
-background:#ffffff;
 width:100%;
-max-width:720px;
-border-radius:14px;
+max-width:760px;
+background:#ffffff;
+border-radius:16px;
 overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,0.18);
+box-shadow:0 18px 45px rgba(0,0,0,0.18);
 }
 
 .header{
@@ -40,36 +39,39 @@ color:#ffffff;
 }
 
 .header img{
-max-width:220px;
-margin-bottom:15px;
+max-width:230px;
+height:auto;
+display:block;
+margin:0 auto 18px auto;
 }
 
 .header h1{
 font-size:30px;
 margin-bottom:8px;
+font-weight:700;
 }
 
 .header p{
-font-size:15px;
+font-size:16px;
 opacity:0.95;
 }
 
 .form-box{
-padding:35px;
+padding:36px;
 }
 
 .form-box h2{
+text-align:center;
 font-size:28px;
 color:#0b2c5f;
 margin-bottom:10px;
-text-align:center;
 }
 
 .form-box p{
+text-align:center;
 font-size:14px;
 color:#666;
-margin-bottom:25px;
-text-align:center;
+margin-bottom:28px;
 }
 
 .input-group{
@@ -79,7 +81,7 @@ margin-bottom:18px;
 input,select,textarea{
 width:100%;
 padding:14px;
-border:1px solid #d8d8d8;
+border:1px solid #d9d9d9;
 border-radius:8px;
 font-size:15px;
 outline:none;
@@ -120,9 +122,9 @@ font-size:14px;
 }
 
 .footer a{
+text-decoration:none;
 color:#0b5ed7;
 font-weight:bold;
-text-decoration:none;
 }
 
 .footer a:hover{
@@ -148,7 +150,7 @@ padding:22px;
 <div class="container">
 
 <div class="header">
-<img src="logo.png" alt="Lakshmi Vacuum Technologies">
+<img src="logo.png" alt="Lakshmi Vacuum Technologies Logo">
 <h1>Vacuum Heat Treatment Furnace</h1>
 <p>Vacuum Heat Treatment Services</p>
 </div>
@@ -178,12 +180,22 @@ padding:22px;
 
 <div class="input-group">
 <select name="product" required>
-<option value="">Applications</option>
+
+<option value="">Select Requirement</option>
+
+<option>Vacuum Heat Treatment Furnace</option>
+
+<option>Vacuum Heat Treatment Services</option>
+
+<option disabled>──────── Application ────────</option>
 <option>Brazing</option>
 <option>Annealing</option>
 <option>Tempering</option>
 <option>Stress Relieving</option>
 <option>Quench Hardening</option>
+
+<option>Other</option>
+
 </select>
 </div>
 
@@ -207,4 +219,3 @@ www.lakshmivacuum.com
 
 </body>
 </html>
-```
