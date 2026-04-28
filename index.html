@@ -1,193 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lakshmi Vacuum Technologies | Enquiry Form</title>
-
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-background:linear-gradient(135deg,#0b2c5f,#0b5ed7);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-}
-
-.container{
-background:#fff;
-width:100%;
-max-width:700px;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 15px 40px rgba(0,0,0,0.18);
-}
-
-.header{
-background:#0b2c5f;
-padding:30px;
-text-align:center;
-color:#fff;
-}
-
-.header img{
-max-width:220px;
-margin-bottom:15px;
-}
-
-.header h1{
-font-size:28px;
-margin-bottom:8px;
-}
-
-.header p{
-font-size:14px;
-opacity:0.9;
-}
-
-.form-box{
-padding:35px;
-}
-
-.form-box h2{
-margin-bottom:10px;
-color:#0b2c5f;
-}
-
-.form-box p{
-margin-bottom:25px;
-color:#555;
-font-size:14px;
-}
-
-.input-group{
-margin-bottom:18px;
-}
-
-input, select, textarea{
-width:100%;
-padding:14px;
-border:1px solid #ddd;
-border-radius:8px;
-font-size:15px;
-outline:none;
-transition:0.3s;
-}
-
-input:focus, textarea:focus, select:focus{
-border-color:#0b5ed7;
-}
-
-textarea{
-resize:vertical;
-min-height:120px;
-}
-
-button{
-width:100%;
-background:#0b5ed7;
-color:#fff;
-border:none;
-padding:16px;
-font-size:17px;
-font-weight:bold;
-border-radius:8px;
-cursor:pointer;
-transition:0.3s;
-}
-
-button:hover{
-background:#084db4;
-}
-
-.footer{
-text-align:center;
-padding:20px;
-background:#f5f7fa;
-font-size:13px;
-color:#666;
-}
-
-@media(max-width:600px){
-.form-box{
-padding:25px;
-}
-.header h1{
-font-size:22px;
-}
-}
-</style>
-</head>
-
-<body>
-
-<div class="container">
-
 <div class="header">
 <img src="logo.png" alt="Lakshmi Vacuum Technologies">
-<h1>Lakshmi Vacuum Technologies</h1>
-<p>Vacuum Furnaces • Heat Treatment • Industrial Solutions</p>
+<h1>Vacuum Heat Treatment Furnace</h1>
+<p>Vacuum Heat Treatment Services</p>
 </div>
 
 <div class="form-box">
 <h2>Submit Your Enquiry</h2>
 <p>Please share your requirement. Our team will contact you shortly.</p>
 
-<form action="YOUR_FORMSPREE_URL" method="POST">
+<form id="enquiryForm">
 
 <div class="input-group">
-<input type="text" name="Company Name" placeholder="Company Name" required>
+<input type="text" name="company" placeholder="Company Name" required>
 </div>
 
 <div class="input-group">
-<input type="text" name="Contact Person" placeholder="Contact Person" required>
+<input type="text" name="person" placeholder="Contact Person" required>
 </div>
 
 <div class="input-group">
-<input type="tel" name="Mobile Number" placeholder="Mobile Number" required>
+<input type="tel" name="mobile" placeholder="Mobile Number" required>
 </div>
 
 <div class="input-group">
-<input type="email" name="Email" placeholder="Email Address" required>
+<input type="email" name="email" placeholder="Email Address" required>
 </div>
 
 <div class="input-group">
-<select name="Product Interest" required>
-<option value="">Select Product</option>
-<option>Vacuum Furnace</option>
-<option>Heat Treatment Furnace</option>
-<option>Vacuum Pump</option>
-<option>Customized Solution</option>
-<option>Other</option>
+<select name="product" required>
+<option value="">Applications</option>
+<option>Brazing</option>
+<option>Annealing</option>
+<option>Tempering</option>
+<option>Stress Relieving</option>
+<option>Quench Hardening</option>
 </select>
 </div>
 
 <div class="input-group">
-<input type="text" name="Quantity" placeholder="Quantity Required">
-</div>
-
-<div class="input-group">
-<textarea name="Message" placeholder="Describe Your Requirement"></textarea>
+<textarea name="remark" placeholder="Remark / Requirement"></textarea>
 </div>
 
 <button type="submit">Submit Enquiry</button>
 
 </form>
 </div>
-
-<div class="footer">
-www.lakshmivacuum.com
-</div>
-
-</div>
-
-</body>
-</html>
